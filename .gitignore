@@ -99,3 +99,7 @@ temp/
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+# Documentation
+README.md
+DEPLOYMENT.md
