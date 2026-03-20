@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="KandAI Systems - Admin" description="Панель управления контентом сайта KandAI Systems">
+  <main class="min-h-screen bg-gray-900 text-white">
+    <div class="container mx-auto px-4 py-8">
+      <h1 class="text-4xl font-bold text-green-400 mb-8">Панель управления</h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded-lg border border-green-400/20">
+          <h2 class="text-2xl font-semibold text-green-400 mb-4">Контент</h2>
+          <p class="text-gray-300 mb-4">Управление контентом сайта</p>
+          <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded transition-colors">
+            Открыть редактор
+          </button>
+        </div>
+        
+        <div class="bg-gray-800 p-6 rounded-lg border border-green-400/20">
+          <h2 class="text-2xl font-semibold text-green-400 mb-4">Медиа</h2>
+          <p class="text-gray-300 mb-4">Загрузка изображений и файлов</p>
+          <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded transition-colors">
+            Управление медиа
+          </button>
+        </div>
+        
+        <div class="bg-gray-800 p-6 rounded-lg border border-green-400/20">
+          <h2 class="text-2xl font-semibold text-green-400 mb-4">Настройки</h2>
+          <p class="text-gray-300 mb-4">Настройки сайта и SEO</p>
+          <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded transition-colors">
+            Настроить сайт
+          </button>
+        </div>
+      </div>
+      
+      <div class="mt-12 bg-gray-800 p-6 rounded-lg border border-green-400/20">
+        <h2 class="text-2xl font-semibold text-green-400 mb-4">Интеграция StudioCMS</h2>
+        <p class="text-gray-300 mb-4">
+          StudioCMS будет интегрирована для управления динамическим контентом. 
+          Статичные компоненты лендинга остаются в Astro, а динамический контент управляется через CMS.
+        </p>
+        <div class="bg-gray-700 p-4 rounded">
+          <p class="text-sm text-gray-400">
+            <strong>Статус:</strong> <span class="text-green-400">В процессе настройки</span><br>
+            <strong>База данных:</strong> <span class="text-yellow-400">Локальная (libSQL)</span><br>
+            <strong>Доступ:</strong> <span class="text-blue-400">Только для администраторов</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import KaspiTools from '../components/KaspiTools.astro';
+import MoySkladIntegration from '../components/MoySkladIntegration.astro';
+import CustomDevelopment from '../components/CustomDevelopment.astro';
+import Community from '../components/Community.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Layout 
+	title="KandAI Systems — Экосистема автоматизации для маркетплейсов и бизнеса"
+	description="Автоматизируйте рутину и растите в прибыли. Умные скрипты, ИИ-боты и ПО для селлеров и системного бизнеса. Проверенные решения для Kaspi.kz и Мой Склад."
+>
+	<Header />
+	<Hero />
+	<KaspiTools />
+	<MoySkladIntegration />
+	<CustomDevelopment />
+	<Community />
+	<Footer />
+</Layout>
+
+<style>
+	/* Smooth scrolling for anchor links */
+	html {
+		scroll-behavior: smooth;
+	}
+
+	/* Custom scrollbar */
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: #1A1A1A;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #39FF14;
+		border-radius: 4px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #00FF41;
+	}
+
+	/* Selection color */
+	::selection {
+		background: rgba(57, 255, 20, 0.3);
+		color: #ffffff;
+	}
+
+	/* Focus styles */
+	a:focus-visible,
+	button:focus-visible {
+		outline: 2px solid #39FF14;
+		outline-offset: 2px;
+	}
+
+	/* Reduce motion for users who prefer it */
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+
+		* {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+		}
+	}
+</style>

@@ -1,0 +1,81 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  :root {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 355 100% 59%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 210 11% 97%;
+    --secondary-foreground: 240 10% 4%;
+    --muted: 240 10% 16%;
+    --muted-foreground: 0 0% 64%;
+    --accent: 211 100% 50%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 16%;
+    --input: 240 10% 16%;
+    --ring: 355 100% 59%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .accent-text {
+    color: #FF3B30;
+    text-shadow: 0 0 10px rgba(255, 59, 48, 0.3),
+                 0 0 20px rgba(255, 59, 48, 0.2);
+  }
+
+  .accent-border {
+    border-color: #FF3B30;
+    box-shadow: 0 0 10px rgba(255, 59, 48, 0.3),
+                0 0 20px rgba(255, 59, 48, 0.1),
+                inset 0 0 10px rgba(255, 59, 48, 0.05);
+  }
+
+  .glass-card {
+    background-color: rgba(45, 45, 45, 0.9);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(64, 64, 64, 1);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #FF3B30, #007AFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-button {
+    background: linear-gradient(135deg, #FF3B30, #FF6B60);
+    transition: all 0.3s ease;
+  }
+
+  .gradient-button:hover {
+    background: linear-gradient(135deg, #D70015, #FF3B30);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 59, 48, 0.3);
+  }
+}

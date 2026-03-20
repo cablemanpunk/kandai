@@ -1,0 +1,53 @@
+---
+export interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content={description} />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="generator" content={Astro.generator} />
+	<title>{title}</title>
+	
+	<!-- SEO Meta Tags -->
+	<meta name="keywords" content="автоматизация маркетплейсов, Мой Склад бот, Каспи накладные PDF, заполнение карточек ИИ, KandAI Systems, автоматизация бизнеса, скрипты для маркетплейсов" />
+	<meta name="author" content="KandAI Systems" />
+	<meta name="robots" content="index, follow" />
+	
+	<!-- Open Graph Meta Tags -->
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://kandai-systems.github.io/kandai-systems-landing/" />
+	<meta property="og:image" content="/og-image.jpg" />
+	<meta property="og:site_name" content="KandAI Systems" />
+	
+	<!-- Twitter Card Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content="/og-image.jpg" />
+	
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+	
+	<style>
+		:global(body) {
+			font-family: 'Inter', system-ui, sans-serif;
+		}
+	</style>
+</head>
+<body class="bg-dark-bg text-white min-h-screen">
+	<slot />
+</body>
+</html>
