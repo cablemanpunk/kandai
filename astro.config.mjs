@@ -1,15 +1,11 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
-import node from '@astrojs/node';
-// import studioCMS from 'studiocms';
 
 export default defineConfig({
-  site: 'https://kandai-systems.vercel.app/',
-  output: 'server',
-  adapter: node({ mode: "standalone" }),
+  site: 'https://cablemanpunk.github.io/kandai/',
+  output: 'static',
   integrations: [
-    tailwind(),
-    // studioCMS()
+    tailwind()
   ],
   build: {
     format: 'directory'
