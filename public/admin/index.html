@@ -15,11 +15,12 @@
   </style>
 </head>
 <body>
+  <script src="/config.yml"></script>
   <script>
     if (window.DecapCMS) {
       window.CMS = window.DecapCMS;
+      CMS.init();
     }
   </script>
-  <script src="/config.yml" type="text/yaml"></script>
 </body>
 </html>
