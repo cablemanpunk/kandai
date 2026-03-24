@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Красно-белая цветовая схема
+        // Светлая цветовая схема
         'accent-red': '#FF3B30',
         'light-red': '#FF6B60',
         'dark-red': '#D70015',
@@ -12,12 +12,12 @@ export default {
         'light-gray': '#F8F9FA',
         'medium-gray': '#E9ECEF',
         'dark-gray': '#495057',
-        'accent-blue': '#007AFF', // Дополнительный акцентный цвет
+        'accent-blue': '#007AFF', // Основной акцентный цвет
         
-        // Dark theme colors
-        'dark-bg': '#1A1A1A',
-        'dark-card': '#2D2D2D',
-        'dark-border': '#404040',
+        // Для совместимости со старыми классами
+        'dark-bg': '#FFFFFF',
+        'dark-card': '#F8F9FA',
+        'dark-border': '#E9ECEF',
         
         // CSS переменные
         border: 'hsl(var(--border))',
